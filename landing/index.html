@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Landing</title>
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<meta name="viewport" content="width=device-width">
+	<link rel="stylesheet" href="css/style.css">
+	<link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
+	<script type="text/javascript" src="js/jquery-2.1.3.min.js"></script>
+	<script type="text/javascript" src="js/jquery.flexslider-min.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
+</head>
+<body>
+	<script type="text/javascript">
+		var map;
+		function initialize() {
+  			map = new google.maps.Map(document.getElementById('map-canvas'), {
+    			zoom: 8,
+    			center: {lat: -34.397, lng: 150.644},
+    			scrollwheel: false
+  			});
+		}
+		google.maps.event.addDomListener(window, 'load', initialize);
+	</script>
+	<div class="sidebar">
+		<a href="#"><img src="images/sidebar.png" alt="sidebar" width="57" height="342"></a>
+		<!-- <h3><a href="#">Подбор тура за 10 минут</a></h3> -->
+	</div>
+	<div class="wrapper">
+		<header>
+			<div class="header-holder">
+				<div class="logo">
+					<div class="img-holder">
+						<a href="#"><img src="images/logo.png" alt="logo"></a>
+					</div>
+					<h1>На растрескавшейся земле белый снег серый лёд</h1>
+				</div>
+				<address>
+					<h4>Приходите в гости:</h4>
+					<p>г.Ижевск, Северный пер. 50-5</p>
+					<a href="#">схема проезда</a>
+					<p><span>пн-пт</span> 11:00-19:00, <span>сб</span> 11:00-17:00</p>
+				</address>
+				<div class="phone">
+					<div class="number">
+						<a href="tel:57-25-43">57-25-43</a>
+					</div>
+					<div class="callback">
+						<p>Обратный звонок</p>
+						<div></div>
+					</div>
+					<div class="popup-holder">
+						<div class="popup">
+							<div class="btn-close">
+								
+							</div>
+							<div class="title-holder">
+								<h3>Обратный<br/> звонок</h3>
+							</div>
+							<div class="form-holder">
+								<form action="#" id="form_1">
+									<fieldset>
+										<input class="login" type="text" placeholder="Ваше имя">
+										<input class="tel" type="text" placeholder="Ваш телефон">
+										<textarea placeholder="Пожелания к туру"></textarea>
+										<button type="submit">Отправить заявку</button>
+									</fieldset>
+								</form>
+							</div>
+							<p>Мы перезвоним вам через <br/>10 минут, засекайте!</p>
+						</div>
+					</div>
+					<p>Звоните! Подберём тур сегодня до 19:00</p>
+				</div>
+			</div>
+		</header>
+		<div class="main">
+			<div class="tours">
+				<div class="tours-holder">
+					<div class="title">
+						<h2>Туры в Турцию</h2>
+						<div class="howitworks">
+							<p><a href="#">Как это работает<br/><span>?</span></a></p>
+						</div>
+						<h3>с гарантией <span>лучшей</span> цены в Ижевске</h3>
+					</div>
+					<div class="action">
+						<div class="action-holder">
+							<h3>Акция!</h3>
+							<h4>Получите  <span>2 000 руб.</span>  на тур!</h4>
+							<p>Дарим сертификат на 2 000 руб. на покупку тура всем посетителям сайта. Просто заполните форму справа.</p>
+							<h4>Спешите! Осталось всего <br/><span>7</span> сертификатов</h4>
+						</div>
+					</div>
+					<div class="holder">
+						<div class="container">
+							<div class="title-holder">
+								<h3>Заполните<br/> форму сейчас</h3>
+							</div>
+							<p>и получите 5 вариантов отдыха с гарантией лучшей цены!</p>
+							<div class="form-holder">
+								<form action="#" id="form_2">
+									<fieldset>
+										<input class="login" type="text" placeholder="Ваше имя">
+										<input class="tel" type="text" placeholder="Ваш телефон">
+										<textarea placeholder="Пожелания к туру"></textarea>
+										<button type="submit">Отправить заявку</button>
+									</fieldset>
+								</form>
+							</div>
+							<p>Мы перезвоним вам через <br/>10 минут, засекайте!</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="price">
+				<div class="price-holder">
+					<h3>Наши рекордные цены</h3>
+					<span>(продано с 04.02.2015 по 11.02.2015)</span>
+					<div class="table-holder">
+						<table>
+							<tbody>
+								<tr>
+									<td>Сомали</td>
+									<td><a href="#">Warior last breathe 5*</a></td>
+									<td>33 000 руб.</td>
+									<td><a href="#">узнать подробнее</a></td>
+								</tr>
+								<tr>
+									<td>Алжир</td>
+									<td><a href="#">Good day to die 5*</a></td>
+									<td>14 000 руб.</td>
+									<td><a href="#">узнать подробнее</a></td>
+								</tr>
+								<tr>
+									<td>Афганистан</td>
+									<td><a href="#">Hell fire resort 4*</a></td>
+									<td>5 000 руб.</td>
+									<td><a href="#">узнать подробнее</a></td>
+								</tr>
+								<tr>
+									<td>Ирак</td>
+									<td><a href="#">Nine grams of lead 5*</a></td>
+									<td>22 000 руб.</td>
+									<td><a href="#">узнать подробнее</a></td>
+								</tr>
+								<tr>
+									<td>Перу</td>
+									<td><a href="#">Stay proud beach 4*</a></td>
+									<td>4 000 руб.</td>
+									<td><a href="#">узнать подробнее</a></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<p>Все сборы уже включены в стоимость! По некоторым датам нужна открытая виза.Стоимость указана на одного при двухместном размещении. Цены реальные, но места кончаются</p>
+					<div class="form-holder">
+						<form action="#" id="form_3">
+							<fieldset>
+								<button type="submit">Получить все предложения</button>
+							</fieldset>
+						</form>
+					</div>
+				</div>
+			</div>
+			<div class="logos">
+				<div class="logos-holder">
+					<h3>Мы работаем с надёжными туроператорами</h3>
+					<div class="img-holder">
+						<img src="images/logos.jpg" alt="logos">
+					</div>
+				</div>
+			</div>
+			<div class="office">
+				<div class="office-holder">
+					<h3>Ждём вас в офисе</h3>
+					<address>
+						<p>г. Ижевск, Северный пер., 50-5</p>
+						<p><span>пн-пт</span> 11:00-19:00, <span>сб</span> 11:00-17:00</p>
+					</address>
+					<div class="photos">
+						<ul>
+							<li>
+								<div class="img-holder">
+									<img src="images/photo1.png" alt="photo1">
+									<div class="hidden-block">
+										<div class="question-holder">
+											<div class="question">
+												<p>Задайте мне вопрос</p>
+											</div>
+										</div>
+										<div class="name">
+											<h3>Менеджер</h3>
+											<h4>Ольга Иванова</h4>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="img-holder">
+									<img src="images/photo2.png" alt="photo2">
+									<div class="hidden-block">
+										<div class="question-holder">
+											<div class="question">
+												<p>Задайте мне вопрос</p>
+											</div>
+										</div>
+										<div class="name">
+											<h3>Секретарь</h3>
+											<h4>Ирина Петрова</h4>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="img-holder">
+									<img src="images/photo-dir.png" alt="photo-dir">
+									<div class="hidden-block">
+										<div class="question-holder">
+											<div class="question">
+												<p>Задайте мне вопрос</p>
+											</div>
+										</div>
+										<div class="name">
+											<h3>Директор агенства</h3>
+											<h4>Оксана Демидова</h4>
+										</div>
+									</div>
+								</div>								
+							</li>
+							<li>
+								<div class="img-holder">
+									<img src="images/photo3.png" alt="photo3">
+									<div class="hidden-block">
+										<div class="name">
+											<h3>Наша зона отдыха</h3>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="img-holder">
+									<img src="images/photo4.png" alt="photo4">
+									<div class="hidden-block">
+										<div class="name">
+											<h3>Наша зона отдыха</h3>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li>
+								<p>Агетнство «Территория отдыха» создано в 2007 году.</p>
+								<a href="tel:+73412572543">+7(3412) 57-25-43</a>
+								<a href="mailto:terra-rest@yandex.ru">terra-rest@yandex.ru</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="howwework">
+				<div class="howwework-holder">
+					<div class="holder">
+						<div class="container">
+							<div class="title-holder">
+								<h3>Мы подберем и рассчитаем для вас <br/>5 вариантов отдыха за10 минут!</h3>
+							</div>
+							<div class="form-holder">
+								<form action="#" id="form_4">
+									<fieldset>
+										<button type="submit">Проверьте нас прямо сейчас!</button>
+									</fieldset>
+								</form>
+							</div>
+						</div>
+					</div>
+					<div class="line">
+						Как мы работаем:
+					</div>
+					<div class="circles">
+						<ul>
+							<li>Заявка</li>
+							<li>
+								<div class="img-holder">
+									<img src="images/arrow.png" alt="arrow">
+								</div>
+							</li>
+							<li>Подбор тура</li>
+							<li>
+								<div class="img-holder">
+									<img src="images/arrow.png" alt="arrow">
+								</div>
+							</li>
+							<li>Подтвер&shy;ждение</li>
+							<li>
+								<div class="img-holder">
+									<img src="images/arrow.png" alt="arrow">
+								</div>
+							</li>
+							<li>Отдых!</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="carousel-wrapper">
+				<div class="carousel-holder">
+					<h3>Отзывы наших клиентов:</h3>
+					<div class="carousel">
+						<ul class="slides">
+							<li>
+								<div class="block1">
+									<div class="img-holder">
+										<img src="images/face1.jpg" alt="face1">
+									</div>
+									<h4>Хрякова Елена Леонидовна</h4>
+									<p>Тур: <span>Тайланд</span></p>
+									<p>Личная страница: <a href="#">http://vk.com/hrjakova</a></p>
+									<p>На сегодняшний день последовательность слов текста Lorem ipsum настолько распространена и общепринята, что многие DTP-программы в состоянии создать рыбные тексты с начальной секвенцией «Lorem ipsum». Что эта последовательность также распознается при редактировании данных в подгротовке к печати. На сегодняшний день последовательность слов текста Lorem ipsum настолько распространена и общепринята, что многие DTP-программы в состоянии создать рыбные тексты с начальной секвенцией «Lorem ipsum». Что эта последовательность также распознается при редактировании данных в подгротовке к печати.</p>
+								</div>
+								<div class="block2">
+									<div class="img-holder">
+										<img src="images/face2.jpg" alt="face2">
+									</div>
+									<h4>Хрякова Елена Леонидовна</h4>
+									<p>Тур: <span>Тайланд</span></p>
+									<p>Личная страница: <a href="#">http://vk.com/hrjakova</a></p>
+									<p>На сегодняшний день последовательность слов текста Lorem ipsum настолько распространена и общепринята, что многие DTP-программы в состоянии создать рыбные тексты с начальной секвенцией «Lorem ipsum». Что эта последовательность также распознается при редактировании данных в подгротовке к печати.</p>
+								</div>
+							</li>
+							<li>
+								<div class="block1">
+									<div class="img-holder">
+										<img src="images/face1.jpg" alt="face1">
+									</div>
+									<h4>Хрякова Елена Леонидовна</h4>
+									<p>Тур: <span>Тайланд</span></p>
+									<p>Личная страница: <a href="#">http://vk.com/hrjakova</a></p>
+									<p>На сегодняшний день последовательность слов текста Lorem ipsum настолько распространена и общепринята, что многие DTP-программы в состоянии создать рыбные тексты с начальной секвенцией «Lorem ipsum». Что эта последовательность также распознается при редактировании данных в подгротовке к печати. На сегодняшний день последовательность слов текста Lorem ipsum настолько распространена и общепринята, что многие DTP-программы в состоянии создать рыбные тексты с начальной секвенцией «Lorem ipsum». Что эта последовательность также распознается при редактировании данных в подгротовке к печати.</p>
+								</div>
+								<div class="block2">
+									<div class="img-holder">
+										<img src="images/face2.jpg" alt="face2">
+									</div>
+									<h4>Хрякова Елена Леонидовна</h4>
+									<p>Тур: <span>Тайланд</span></p>
+									<p>Личная страница: <a href="#">http://vk.com/hrjakova</a></p>
+									<p>На сегодняшний день последовательность слов текста Lorem ipsum настолько распространена и общепринята, что многие DTP-программы в состоянии создать рыбные тексты с начальной секвенцией «Lorem ipsum». Что эта последовательность также распознается при редактировании данных в подгротовке к печати.</p>
+								</div>
+							</li>
+							<li>
+								<div class="block1">
+									<div class="img-holder">
+										<img src="images/face1.jpg" alt="face1">
+									</div>
+									<h4>Хрякова Елена Леонидовна</h4>
+									<p>Тур: <span>Тайланд</span></p>
+									<p>Личная страница: <a href="#">http://vk.com/hrjakova</a></p>
+									<p>На сегодняшний день последовательность слов текста Lorem ipsum настолько распространена и общепринята, что многие DTP-программы в состоянии создать рыбные тексты с начальной секвенцией «Lorem ipsum». Что эта последовательность также распознается при редактировании данных в подгротовке к печати. На сегодняшний день последовательность слов текста Lorem ipsum настолько распространена и общепринята, что многие DTP-программы в состоянии создать рыбные тексты с начальной секвенцией «Lorem ipsum». Что эта последовательность также распознается при редактировании данных в подгротовке к печати.</p>
+								</div>
+								<div class="block2">
+									<div class="img-holder">
+										<img src="images/face2.jpg" alt="face2">
+									</div>
+									<h4>Хрякова Елена Леонидовна</h4>
+									<p>Тур: <span>Тайланд</span></p>
+									<p>Личная страница: <a href="#">http://vk.com/hrjakova</a></p>
+									<p>На сегодняшний день последовательность слов текста Lorem ipsum настолько распространена и общепринята, что многие DTP-программы в состоянии создать рыбные тексты с начальной секвенцией «Lorem ipsum». Что эта последовательность также распознается при редактировании данных в подгротовке к печати.</p>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="rings">
+				<div class="rings-holder">
+					<ul>
+						<li>
+							<div class="img-holder">
+								<img src="images/ring1.png" alt="ring1">
+								<span>2007</span>
+							</div>
+							<p>Работаем с 2007 года</p>
+						</li>
+						<li>
+							<div class="img-holder">
+								<img src="images/ring2.png" alt="ring2">
+							</div>
+							<p>Рассрочка до 6 мес. без процентов</p>
+						</li>
+						<li>
+							<div class="img-holder">
+								<img src="images/ring3.png" alt="ring3">
+							</div>
+							<p>Бесплатно довезём до нашего офиса</p>
+						</li>
+						<li>
+							<div class="img-holder">
+								<img src="images/ring4.png" alt="ring4">
+							</div>
+							<p>Дарим сертификат на отдых 2 000 руб.</p>
+						</li>
+						<li>
+							<div class="img-holder">
+								<img src="images/ring5.png" alt="ring5">
+							</div>
+							<p>Помогаем приобрести авиа и жд билеты</p>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="best">
+				<div class="best-holder">
+					<h3>Мы гарантируем <span>лучшие</span> цены на туры в Ижевске</h3>
+					<div class="action">
+						<div class="action-holder">
+							<h3>Акция!</h3>
+							<h4>Получите  <span>2 000 руб.</span>  на тур!</h4>
+							<p>Дарим сертификат на 2 000 руб. на покупку тура всем посетителям сайта. Просто заполните форму справа.</p>
+							<h4>Спешите! Осталось всего <br/><span>7</span> сертификатов</h4>
+						</div>
+					</div>
+					<div class="holder">
+						<div class="container">
+							<div class="title-holder">
+								<h3>Заполните<br/> форму сейчас</h3>
+							</div>
+							<p>и получите 5 вариантов отдыха с гарантией лучшей цены!</p>
+							<div class="form-holder">
+								<form action="#" id="form_5">
+									<fieldset>
+										<input class="login" type="text" placeholder="Ваше имя">
+										<input class="tel" type="text" placeholder="Ваш телефон">
+										<textarea placeholder="Пожелания к туру"></textarea>
+										<button type="submit">Отправить заявку</button>
+									</fieldset>
+								</form>
+							</div>
+							<p>Мы перезвоним вам через <br/>10 минут, засекайте!</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="star">
+				<div class="star-holder">
+					<div class="holder">
+						<div class="container">
+							<div class="title-holder">
+								<h3>Остались вопросы? Звоните. <br/>Мы с радостью ответим!</h3>
+							</div>
+							<div class="link">
+								<a href="tel:+73412572543">+7 (3412) 57-25-43</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="map">
+				<div id="map-canvas"></div>
+			</div>
+		</div>
+		<footer>
+			<div class="footer-holder">
+				<div class="territory">
+					<h4>ooo «Территория отдыха»</h4>
+					<p>ОГРН: 1285001323999, ИНН: 1231231123123, КПП: 43532453453 р.счет: 33453454355666567787</p>
+				</div>
+				<address>
+					<p>г. Ижевск, Северный пер., 50-5</p>
+					<p><span>пн-пт</span> 11:00-19:00, <span>сб</span> 11:00-17:00</p>
+				</address>
+				<div class="agreement">
+					<a href="#">Соглашение об обработке персональных данных</a>
+				</div>
+			</div>
+		</footer>
+	</div>
+</body>
+</html>	
