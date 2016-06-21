@@ -1,12 +1,12 @@
-jQuery(document).ready(function(){
+$(document).ready(function(){
 //======================= BURGER-BUTTON =========================== 
-  	jQuery('.burger-btn-holder').on('click', function(){
-		if (!jQuery(this).hasClass('active')){
-			jQuery(this).addClass('active');
-			jQuery(this).next().stop(true, true).addClass('active');
+  	$('.burger-btn-holder').on('click', function(){
+		if (!$(this).hasClass('active')){
+			$(this).addClass('active');
+			$(this).next().stop(true, true).addClass('active');
 		} else {
-			jQuery(this).removeClass('active');
-			jQuery(this).next().stop(true, true).removeClass('active');
+			$(this).removeClass('active');
+			$(this).next().stop(true, true).removeClass('active');
 		}
 	});
 	//======================= PARALLAX =========================== 
