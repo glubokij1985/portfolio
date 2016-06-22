@@ -38,7 +38,7 @@ footer .footer-holder:after{
 	clear: both;
 }
 .wrapper{
-	max-width: 1800px;
+	width: 100%;
 	margin: 0 auto;
 }
 .sidebar{
@@ -69,6 +69,7 @@ footer .footer-holder:after{
 header{
 	height: 100px;
 	background: url(../images/header-bg.jpg) no-repeat 0 0;
+	background-size: cover;
 	border-bottom: 5px solid #4d5256;
 }
 header .header-holder{
@@ -221,9 +222,9 @@ header .header-holder .phone .popup .title-holder h3{
 header .header-holder .phone .popup .form-holder{
 	margin: 0 0 26px;
 }
-header .header-holder .phone .popup .form-holder #form_1 .login,
-header .header-holder .phone .popup .form-holder #form_1 .tel,
-header .header-holder .phone .popup .form-holder #form_1 textarea{
+#form_1 .login,
+#form_1 .tel,
+#form_1 textarea{
 	background: rgba(19, 28, 40, .36) url(../images/login.png) no-repeat 6px 8px;
   	width: 223px;
   	height: 32px;
@@ -236,10 +237,10 @@ header .header-holder .phone .popup .form-holder #form_1 textarea{
 	display: block;
 	margin: 0 auto 10px auto;
 }
-header .header-holder .phone .popup .form-holder #form_1 .tel{
+#form_1 .tel{
 	background: rgba(19, 28, 40, .36) url(../images/tel.png) no-repeat 10px 8px;
 }
-header .header-holder .phone .popup .form-holder #form_1 textarea{
+#form_1 textarea{
 	background-image: none;
   	padding: 7px 10px;
   	margin: 0 auto 20px auto;
@@ -247,7 +248,7 @@ header .header-holder .phone .popup .form-holder #form_1 textarea{
   	height: 78px;
 	resize: none;
 }
-header .header-holder .phone .popup .form-holder #form_1 button{
+#form_1 button{
 	display: block;
   	vertical-align: top;
 	width: 254px;
@@ -270,7 +271,7 @@ header .header-holder .phone .popup .form-holder #form_1 button{
   background: linear-gradient(to bottom, #dc0507 0%,#cf122a 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dc0507', endColorstr='#cf122a',GradientType=0 );
 }
-header .header-holder .phone .popup .form-holder #form_1 button:hover{
+#form_1 button:hover{
 	background: #cf112a;
   background: -moz-linear-gradient(top, #cf112a 0%, #dd0606 100%);
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#cf112a), color-stop(100%,#dd0606));
@@ -473,9 +474,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#074bd5', end
 .main .tours .tours-holder .container .form-holder{
 	margin: 0 0 14px;
 }
-.main .tours .tours-holder .container .form-holder #form_2 .login,
-.main .tours .tours-holder .container .form-holder #form_2 .tel,
-.main .tours .tours-holder .container .form-holder #form_2 textarea{
+#form_2 .login,
+#form_2 .tel,
+#form_2 textarea{
 	background: rgba(19, 28, 40, .36) url(../images/login.png) no-repeat 6px 8px;
   	width: 223px;
   	height: 32px;
@@ -488,10 +489,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#074bd5', end
 	display: block;
 	margin: 0 auto 10px auto;
 }
-.main .tours .tours-holder .container .form-holder #form_2 .tel{
+#form_2 .tel{
 	background: rgba(19, 28, 40, .36) url(../images/tel.png) no-repeat 10px 8px;
 }
-.main .tours .tours-holder .container .form-holder #form_2 textarea{
+#form_2 textarea{
 	background-image: none;
   	padding: 7px 10px;
   	margin: 0 auto 20px auto;
@@ -499,7 +500,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#074bd5', end
   	height: 78px;
 	resize: none;
 }
-.main .tours .tours-holder .container .form-holder #form_2 button{
+#form_2 button{
 	display: block;
   	vertical-align: top;
 	width: 254px;
@@ -522,7 +523,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#074bd5', end
   background: linear-gradient(to bottom, #dc0507 0%,#cf122a 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dc0507', endColorstr='#cf122a',GradientType=0 );
 }
-.main .tours .tours-holder .container .form-holder #form_2 button:hover{
+#form_2 button:hover{
 	background: #cf112a;
   background: -moz-linear-gradient(top, #cf112a 0%, #dd0606 100%);
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#cf112a), color-stop(100%,#dd0606));
@@ -575,42 +576,42 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#074bd5', end
   	border-spacing: 1px;
   	width: 100%;
 }
-.main .price .price-holder .table-holder table tr:nth-child(odd){
+.main .price .price-holder tr:nth-child(odd){
 	background: rgba(238, 38, 17, .1);
 }
-.main .price .price-holder .table-holder table tr:nth-child(even){
+.main .price .price-holder tr:nth-child(even){
 	background: rgba(238, 38, 17, .3);
 }
-.main .price .price-holder .table-holder table tr{
+.main .price .price-holder tr{
 	line-height: 33px;
 }
-.main .price .price-holder .table-holder table tr:hover{
+.main .price .price-holder tr:hover{
 	background: #d79375;
 }
-.main .price .price-holder .table-holder table tr td{
+.main .price .price-holder tr td{
 	padding: 0 0 0 20px;
 }
-.main .price .price-holder .table-holder table tr td:first-child{
+.main .price .price-holder tr td:first-child{
 	font: 18px 'PT Sans', arial, sans-serif;
 	color: #333;
 	width: 23.3%;
 }
-.main .price .price-holder .table-holder table tr td:nth-child(2){
+.main .price .price-holder tr td:nth-child(2){
 	width: 30.7%;
 }
-.main .price .price-holder .table-holder table tr td:last-child{
+.main .price .price-holder tr td:last-child{
 	width: 23.3%;
 }
-.main .price .price-holder .table-holder table tr td:nth-child(2) a,
-.main .price .price-holder .table-holder table tr td:last-child a{
+.main .price .price-holder tr td:nth-child(2) a,
+.main .price .price-holder tr td:last-child a{
 	font: 18px 'PT Sans', arial, sans-serif;
 	color: #ee2611;
 }
-.main .price .price-holder .table-holder table tr td:nth-child(2) a:hover,
-.main .price .price-holder .table-holder table tr td:last-child a:hover{
+.main .price .price-holder tr td:nth-child(2) a:hover,
+.main .price .price-holder tr td:last-child a:hover{
 	text-decoration: none;
 }
-.main .price .price-holder .table-holder table tr td:nth-child(3){
+.main .price .price-holder tr td:nth-child(3){
 	font: bold 18px 'PT Sans', arial, sans-serif;
 	color: #333;
 	width: 23.1%;
@@ -623,7 +624,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#074bd5', end
 	margin: 0 auto 44px;
 	line-height: 22px;
 }
-.main .price .price-holder .form-holder #form_3 button{
+#form_3 button{
 	display: block;
   	vertical-align: top;
   	width: 370px;
@@ -645,7 +646,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#074bd5', end
   background: linear-gradient(to bottom, #dc0507 0%,#cf122a 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dc0507', endColorstr='#cf122a',GradientType=0 );
 }
-.main .price .price-holder .form-holder #form_3 button:hover{
+#form_3 button:hover{
 	background: #cf112a;
   background: -moz-linear-gradient(top, #cf112a 0%, #dd0606 100%);
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#cf112a), color-stop(100%,#dd0606));
@@ -715,51 +716,51 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#074bd5', end
 .main .office .office-holder address p:last-child span{
 	font: bold 18px 'PT Sans', arial, sans-serif;
 }
-.main .office .office-holder .photos{
+.main .office .photos{
 	font-size: 0;
 	line-height: 0;
 }
-.main .office .office-holder .photos ul li{
+.main .office .photos li{
 	display: inline-block;
 	vertical-align: top;
 	position: relative;
 	width: 28.2%;
 }
-.main .office .office-holder .photos ul li .img-holder{
+.main .office .photos li .img-holder{
 	width: 97.2%;
 }
-.main .office .office-holder .photos ul li .img-holder img{
+.main .office .photos li .img-holder img{
 	width: 100%;
 	height: auto;
 }
-.main .office .office-holder .photos ul li:first-child{
+.main .office .photos li:first-child{
 	margin: -17px 21px 0 64px;
 }
-.main .office .office-holder .photos ul li:nth-child(2){
+.main .office .photos li:nth-child(2){
 	margin: 43px 5px 0 0;
 }
-.main .office .office-holder .photos ul li:nth-child(3){
+.main .office .photos li:nth-child(3){
 	margin: 129px 21px 0 0;
 	width: 31.1%;
 }
-.main .office .office-holder .photos ul li:nth-child(4){
+.main .office .photos li:nth-child(4){
 	margin: -170px 21px 0 84px;
 }
-.main .office .office-holder .photos ul li:nth-child(5){
+.main .office .photos li:nth-child(5){
 	margin: -110px 0 0;
 }
-.main .office .office-holder .photos ul li:last-child{
+.main .office .photos li:last-child{
 	max-width: 258px;
 	margin: 39px 0 0 25px;
 }
-.main .office .office-holder .photos ul li:last-child p{
+.main .office .photos li:last-child p{
 	font: bold 18px 'PT Sans', arial, sans-serif;
 	color: #333;
 	display: block;
 	letter-spacing: -0.1px;
 	margin: 0 0 3px;
 }
-.main .office .office-holder .photos ul li:last-child a{
+.main .office .photos li:last-child a{
 	font: bold 24px 'PT Sans', arial, sans-serif;
 	color: #333;
 	text-decoration: none;
@@ -767,13 +768,13 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#074bd5', end
 	letter-spacing: .6px;
 	line-height: 30px;
 }
-.main .office .office-holder .photos ul li:last-child a:last-child{
+.main .office .photos li:last-child a:last-child{
 	letter-spacing: normal;
 }
-.main .office .office-holder .photos ul li:last-child a:hover{
+.main .office .photos li:last-child a:hover{
 	text-decoration: underline;
 }
-.main .office .office-holder .photos ul li .img-holder .hidden-block{
+.main .office .photos li .img-holder .hidden-block{
 	opacity: 0;
 	position: absolute;
 	bottom: -26px;
@@ -786,14 +787,14 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#074bd5', end
   	-moz-transition: all .5s ease-in-out;
   	transition: all .5s ease-in-out;
 }
-.main .office .office-holder .photos ul li .img-holder.hovered .hidden-block{
+.main .office .photos li .img-holder.hovered .hidden-block{
 	opacity: 1;
 }
-.main .office .office-holder .photos ul li .img-holder .hidden-block .question-holder{
+.main .office .photos li .img-holder .hidden-block .question-holder{
 	text-align: right;
 	margin: 0 0 14px;
 }
-.main .office .office-holder .photos ul li .img-holder .hidden-block .question{
+.main .office .photos li .img-holder .hidden-block .question{
 	display: inline-block;
 	padding: 0 11px;
   	height: 28px;
@@ -812,10 +813,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#074bd5', end
   background: linear-gradient(to bottom, #dc0507 0%,#cf122a 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dc0507', endColorstr='#cf122a',GradientType=0 );
 }
-.main .office .office-holder .photos ul li .img-holder .hidden-block .question:hover{
+.main .office .photos li .img-holder .hidden-block .question:hover{
 	opacity: .7;
 }
-.main .office .office-holder .photos ul li .img-holder .hidden-block .question p{
+.main .office .photos li .img-holder .hidden-block .question p{
 	font: 12px 'elektra_text_proregular', arial, sans-serif;
   	color: #fefefe;
   	text-shadow: 0 1px 0 #000;
@@ -823,7 +824,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#074bd5', end
   	cursor: pointer;
   	text-align: center;
 }
-.main .office .office-holder .photos ul li .img-holder .hidden-block .name{
+.main .office .photos li .img-holder .hidden-block .name{
 	width: 202px;
   	height: 59px;
 	border: 2px solid #fff;
@@ -832,11 +833,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#074bd5', end
 	box-shadow: inset 0 0 2px 2px #ececec, 0 0 2px 1px #6e6e6e;
 	padding: 4px 0 0 14px;
 }
-.main .office .office-holder .photos ul li .img-holder .hidden-block .name h3{
+.main .office .photos li .img-holder .hidden-block .name h3{
 	font: 18px 'PT Sans', arial, sans-serif;
 	color: #333;
 }
-.main .office .office-holder .photos ul li .img-holder .hidden-block .name h4{
+.main .office .photos li .img-holder .hidden-block .name h4{
 	font: bold 22px 'PT Sans', arial, sans-serif;
 	color: #333;
 }
@@ -877,7 +878,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#074bd5', end
 .main .howwework .howwework-holder .container .form-holder{
 	margin: 0 0 14px;
 }
-.main .howwework .howwework-holder .container .form-holder #form_4 button{
+#form_4 button{
 	display: block;
   	vertical-align: top;
   	width: 412px;
@@ -900,7 +901,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#074bd5', end
   background: linear-gradient(to bottom, #dc0507 0%,#cf122a 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dc0507', endColorstr='#cf122a',GradientType=0 );
 }
-.main .howwework .howwework-holder .container .form-holder #form_4 button:hover{
+#form_4 button:hover{
 	background: #cf112a;
   background: -moz-linear-gradient(top, #cf112a 0%, #dd0606 100%);
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#cf112a), color-stop(100%,#dd0606));
@@ -910,7 +911,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#074bd5', end
   background: linear-gradient(to bottom, #cf112a 0%,#dd0606 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cf112a', endColorstr='#dd0606',GradientType=0 );
 }
-.main .howwework .howwework-holder .line{
+.main .howwework .line{
 	font: bold 32px 'elektra_text_probold', arial, sans-serif;
   	color: #fefefe;
   	text-shadow: 0 4px 4px rgba(0, 70, 130, .75);
@@ -922,12 +923,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#074bd5', end
   	top: 46.5%;
   	left: 0;
 }
-.main .howwework .howwework-holder .circles{
+.main .howwework .circles{
 	font-size: 0;
 	line-height: 0;
 	text-align: center;	
 }
-.main .howwework .howwework-holder .circles ul li{
+.main .howwework .circles li{
 	font: bold 24px 'elektra_text_probold', arial, sans-serif;
   	color: #fefefe;
   	text-shadow: 0 1px 0 #000;
@@ -942,41 +943,41 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#074bd5', end
   	text-align: center;
   	margin: 0 10px 0 0;
 }
-.main .howwework .howwework-holder .circles ul li:last-child{
+.main .howwework .circles li:last-child{
 	margin: 0;
 	padding: 47px 0 0 0;
 	height: 83px;
 }
-.main .howwework .howwework-holder .circles ul li:first-child{
+.main .howwework .circles li:first-child{
 	opacity: .3;
 	padding: 47px 0 0 0;
 	height: 83px;
 }
-.main .howwework .howwework-holder .circles ul li:nth-child(2){
+.main .howwework .circles li:nth-child(2){
 	opacity: 1;
 	background: url(../images/arrow.png) no-repeat 0 0;
 	width: 42px;
 	height: 31px;
 	border: none;
 }
-.main .howwework .howwework-holder .circles ul li:nth-child(3){
+.main .howwework .circles li:nth-child(3){
 	opacity: .5;
 	padding: 37px 0 0 0;
 	height: 93px;
 }
-.main .howwework .howwework-holder .circles ul li:nth-child(4){
+.main .howwework .circles li:nth-child(4){
 	opacity: 1;
 	background: url(../images/arrow.png) no-repeat 0 0;
 	width: 42px;
 	height: 31px;
 	border: none;
 }
-.main .howwework .howwework-holder .circles ul li:nth-child(5){
+.main .howwework .circles li:nth-child(5){
 	opacity: .7;
 	padding: 37px 0 0 0;
 	height: 93px;
 }
-.main .howwework .howwework-holder .circles ul li:nth-child(6){
+.main .howwework .circles li:nth-child(6){
 	opacity: 1;
 	background: url(../images/arrow.png) no-repeat 0 0;
 	width: 42px;
@@ -988,54 +989,54 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#074bd5', end
 	padding: 42px 0 95px;
   	border-bottom: 5px solid #4d5256;
 }
-.main .carousel-wrapper .carousel-holder{
+.main .carousel-holder{
 	max-width: 981px;
   	margin: 0 auto;
 }
-.main .carousel-wrapper .carousel-holder h3{
+.main .carousel-holder h3{
 	font: bold 32px 'elektra_text_probold', arial, sans-serif;
   	color: #354449;
   	text-align: center;
   	margin: 0 0 48px;
   	text-shadow: 0 2px 4px #4c677d;
 }
-.main .carousel-wrapper .carousel-holder .carousel{
+.main .carousel{
 	padding: 0 50px;
 	position: relative;
 }
-.main .carousel-wrapper .carousel-holder .carousel ul li{
+.main .carousel li{
 	font-size: 0;
 	line-height: 0;
 }
-.main .carousel-wrapper .carousel-holder .carousel ul li .block1,
-.main .carousel-wrapper .carousel-holder .carousel ul li .block2{
+.main .carousel li .block1,
+.main .carousel li .block2{
 	float: left;
 	margin: 0 25px 0 0;
 	width: 48.3%;
 }
-.main .carousel-wrapper .carousel-holder .carousel ul li .block2{
+.main .carousel li .block2{
 	margin: 0;
 }
-.main .carousel-wrapper .carousel-holder .carousel ul li .img-holder{
+.main .carousel li .img-holder{
 	float: left;
 	margin: 0 7px 0 0;
 }
-.main .carousel-wrapper .carousel-holder .carousel ul li h4{
+.main .carousel li h4{
 	font: bold 20px 'elektra_text_probold', arial, sans-serif;
   	color: #336699;
   	margin: 2px 0 2px;
 }
-.main .carousel-wrapper .carousel-holder .carousel ul li p{
+.main .carousel li p{
 	font: 14px 'PT Sans', arial, sans-serif;
   	color: #333;
 }
-.main .carousel-wrapper .carousel-holder .carousel ul li p:last-child{
+.main .carousel li p:last-child{
 	text-indent: 30px;
 	margin: 58px 0 0;
   	line-height: 17px;
   	position: relative;
 }
-.main .carousel-wrapper .carousel-holder .carousel ul li p:last-child:before{
+.main .carousel li p:last-child:before{
 	content: '';
 	background: url(../images/quote-left.jpg) no-repeat 0 0;
 	width: 16px;
@@ -1044,7 +1045,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#074bd5', end
 	top: -13px;
   	left: 1px;
 }
-.main .carousel-wrapper .carousel-holder .carousel ul li p:last-child:after{
+.main .carousel li p:last-child:after{
 	content: '';
 	background: url(../images/quote-right.jpg) no-repeat 0 0;
 	width: 16px;
@@ -1054,32 +1055,32 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#074bd5', end
   	right: 5px;
 
 }
-.main .carousel-wrapper .carousel-holder .carousel ul li p span{
+.main .carousel li p span{
 	font: bold 14px 'PT Sans', arial, sans-serif;
   	color: #333;
 }
-.main .carousel-wrapper .carousel-holder .carousel ul li p a{
+.main .carousel li p a{
 	font: bold 14px 'PT Sans', arial, sans-serif;
   	color: #333;
   	text-decoration: none;
 }
-.main .carousel-wrapper .carousel-holder .carousel ul li p a:hover{
+.main .carousel li p a:hover{
   	text-decoration: underline;
 }
-.main .carousel-wrapper .carousel-holder .carousel .flex-control-nav{
+.main .carousel .flex-control-nav{
 	display: none;
 }
-.main .carousel-wrapper .carousel-holder .carousel .flex-direction-nav{
+.main .carousel .flex-direction-nav{
 	position: absolute;
 	top: 31%;
 	left: 0;
 	width: 100%;
 }
-.main .carousel-wrapper .carousel-holder .carousel .flex-direction-nav li{
+.main .carousel .flex-direction-nav li{
 	font-size: 12px;
 	line-height: normal;
 }
-.main .carousel-wrapper .carousel-holder .carousel .flex-direction-nav li a{
+.main .carousel .flex-direction-nav li a{
 	display: inline-block;
 	vertical-align: top;
 	text-indent: -9999px;
@@ -1087,16 +1088,16 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#074bd5', end
 	height: 30px;
 	background: url(../images/prev.png) no-repeat 0 0;
 }
-.main .carousel-wrapper .carousel-holder .carousel .flex-direction-nav li a:hover{
+.main .carousel .flex-direction-nav li a:hover{
 	opacity: .7;
 }
-.main .carousel-wrapper .carousel-holder .carousel .flex-direction-nav li a.flex-next{
+.main .carousel .flex-direction-nav li a.flex-next{
 	background: url(../images/next.png) no-repeat 0 0;
 }
-.main .carousel-wrapper .carousel-holder .carousel .flex-direction-nav li:first-child{
+.main .carousel .flex-direction-nav li:first-child{
 	float: left;
 }
-.main .carousel-wrapper .carousel-holder .carousel .flex-direction-nav li:last-child{
+.main .carousel .flex-direction-nav li:last-child{
 	float: right;
 }
 .main .rings{
@@ -1253,9 +1254,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f8decd', end
 .main .best .best-holder .container .form-holder{
 	margin: 0 0 14px;
 }
-.main .best .best-holder .container .form-holder #form_5 .login,
-.main .best .best-holder .container .form-holder #form_5 .tel,
-.main .best .best-holder .container .form-holder #form_5 textarea{
+#form_5 .login,
+#form_5 .tel,
+#form_5 textarea{
 	background: rgba(19, 28, 40, .36) url(../images/login.png) no-repeat 6px 8px;
   	width: 223px;
   	height: 32px;
@@ -1268,10 +1269,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f8decd', end
 	display: block;
 	margin: 0 auto 10px auto;
 }
-.main .best .best-holder .container .form-holder #form_5 .tel{
+#form_5 .tel{
 	background: rgba(19, 28, 40, .36) url(../images/tel.png) no-repeat 10px 8px;
 }
-.main .best .best-holder .container .form-holder #form_5 textarea{
+#form_5 textarea{
 	background-image: none;
   	padding: 7px 10px;
   	margin: 0 auto 20px auto;
@@ -1279,7 +1280,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f8decd', end
   	height: 78px;
 	resize: none;
 }
-.main .best .best-holder .container .form-holder #form_5 button{
+#form_5 button{
 	display: block;
   	vertical-align: top;
 	width: 254px;
@@ -1302,7 +1303,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f8decd', end
   background: linear-gradient(to bottom, #dc0507 0%,#cf122a 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dc0507', endColorstr='#cf122a',GradientType=0 );
 }
-.main .best .best-holder .container .form-holder #form_5 button:hover{
+#form_5 button:hover{
 	background: #cf112a;
   background: -moz-linear-gradient(top, #cf112a 0%, #dd0606 100%);
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#cf112a), color-stop(100%,#dd0606));
@@ -1491,32 +1492,32 @@ footer .footer-holder .agreement a:hover{
 	}
 }
 @media screen and (max-width: 904px){
-	.main .office .office-holder .photos ul li {
+	.main .office .office-holder .photos li {
   		display: block;
   		width: 95% !important;
   		margin: 0 18px !important;
 	}
-	.main .office .office-holder .photos ul li .img-holder {
+	.main .office .office-holder .photos li .img-holder {
   		width: 253px;
   		margin: 0 auto;
 	}
-	.main .office .office-holder .photos ul li .img-holder .hidden-block {
+	.main .office .office-holder .photos li .img-holder .hidden-block {
   		position: absolute;
   		bottom: 0;
   		right: 115px;
 	}
-	.main .office .office-holder .photos ul li:last-child {
+	.main .office .office-holder .photos li:last-child {
   		max-width: 258px;
   		margin: 0 auto !important;
 	}
 }
 @media screen and (max-width: 860px){
-	.main .carousel-wrapper .carousel-holder .carousel ul li .block1, .main .carousel-wrapper .carousel-holder .carousel ul li .block2 {
+	.main .carousel li .block1, .main .carousel li .block2 {
   		float: left;
   		margin: 0;
   		width: 100%;
 	}
-	.main .carousel-wrapper .carousel-holder .carousel ul li .block1{
+	.main .carousel li .block1{
 		margin: 0 0 35px;
 	}
 	footer .footer-holder .agreement {
@@ -1536,13 +1537,13 @@ footer .footer-holder .agreement a:hover{
   		top: 38%;
   		left: 0;
 	}
-	.main .howwework .howwework-holder .circles ul li:first-child {
+	.main .howwework .circles ul li:first-child {
   		margin: 0 10px 20px 0;
 	}
-	.main .howwework .howwework-holder .circles ul li:nth-child(2) {
+	.main .howwework .circles ul li:nth-child(2) {
 		margin: 0 10px 20px 0;
 	}
-	.main .howwework .howwework-holder .circles ul li:nth-child(3) {
+	.main .howwework .circles ul li:nth-child(3) {
   		margin: 0 10px 20px 0;
 	}
 }
@@ -1603,7 +1604,7 @@ footer .footer-holder .agreement a:hover{
   		height: 179px;
   		margin: 0 18px 150px;
 	}
-	.main .howwework .howwework-holder .container .form-holder {
+	.main .howwework .container .form-holder {
   		margin: 0 17px 14px;
 	}
 	.main .star .star-holder .holder {
@@ -1613,7 +1614,7 @@ footer .footer-holder .agreement a:hover{
 	}
 }
 @media screen and (max-width: 494px){
-	.main .howwework .howwework-holder .container .form-holder #form_4 button{
+	#form_4 button{
 		font: bold 15px 'elektra_text_probold', arial, sans-serif;
 		line-height: 43px;
 		width: 245px;
@@ -1637,7 +1638,7 @@ footer .footer-holder .agreement a:hover{
 	.main .office .office-holder address p:last-child {
   		font: 14px 'PT Sans', arial, sans-serif;
 	}
-	.main .howwework .howwework-holder .container .title-holder h3 {
+	.main .howwework .container .title-holder h3 {
   		font: bold 20px 'elektra_text_probold', arial, sans-serif;
 	}
 	.main .carousel-wrapper .carousel-holder h3 {
@@ -1654,10 +1655,10 @@ footer .footer-holder .agreement a:hover{
 	.main .price .price-holder .table-holder table tr td{
 		padding: 0 0 0 5px;
 	}
-	.main .price .price-holder .table-holder table tr td:first-child,
-	.main .price .price-holder .table-holder table tr td:nth-child(3),
-	.main .price .price-holder .table-holder table tr td:nth-child(2) a,
-	.main .price .price-holder .table-holder table tr td:last-child a{
+	.main .price .price-holder tr td:first-child,
+	.main .price .price-holder tr td:nth-child(3),
+	.main .price .price-holder tr td:nth-child(2) a,
+	.main .price .price-holder tr td:last-child a{
 		font-size: 10px;
 	}
 }
@@ -1680,7 +1681,7 @@ footer .footer-holder .agreement a:hover{
 	.main .best .best-holder .holder{
 		width: 93%;
 	}
-	.main .price .price-holder .form-holder #form_3 button{
+	#form_3 button{
 		width: 95%;
 	}
 	.main .logos .logos-holder h3{

@@ -1,41 +1,39 @@
-jQuery(function(){
-//======================= POP-UP ===========================                                 
-	jQuery('.phone .callback').on('click', function(){
-		$this = jQuery(this);                     
+$(function(){
+//======================= POP-UP ===========================
+	$(document).on('click', '.phone .callback', function(){
+		var $this = $(this);                     
 		if(!$this.hasClass('active')){ 
 			$this.addClass('active');              
-			$this.next().slideDown(500);            
+			$this.next().show(200);            
 		} else {                                   
-			$this.removeClass('active');            
-			$this.next().slideUp(500);             
+			$this.removeClass('active');
+			$this.next().hide(200);
 		}
 	});
-	jQuery('.phone .callback div').on('click', function(){
-		$this = jQuery(this);
+	$(document).on('click', '.phone .callback div', function(){
+		var $this = $(this);
+		$this.parent().next().hide(200);
 		$this.parent().removeClass('.active');
-		$this.parent().next().slideUp(500);
 	});
-	jQuery('header .header-holder .phone .popup .btn-close').on('click', function(){
-		$this = jQuery(this);
-		$this.parent().hide();
-		$('.phone .callback div').hide();
-		$this.parent().next().slideUp(500);
+	$(document).on('click', '.phone .popup .btn-close', function(){
+		var $this = $(this);
+		var popupHolder = $('.popup-holder');
+		var callbackBtn = $('.phone .callback');
+		popupHolder.hide(200);
+		callbackBtn.removeClass('active');
+		$this.parent().next().hide(200);
 	});
 //======================= HOVER ON FACE =========================== 
-	jQuery('.main .office .office-holder .photos ul li .img-holder').on('mouseenter', function(){
-		$this = jQuery(this);
+	$('.photos ul li .img-holder').on('mouseenter', function(){
+		var $this = $(this);
 		$this.addClass('hovered');
-		//$this.find('.sub-menu').fadeIn('fast');
-		//$this.find('.sub-menu').css({display: 'block'});
 	});
-	jQuery('.main .office .office-holder .photos ul li .img-holder').on('mouseleave', function(){
-		$this = jQuery(this);
+	$('.photos ul li .img-holder').on('mouseleave', function(){
+		var $this = $(this);
 		$this.removeClass('hovered');
-		//$this.find('.sub-menu').fadeOut('fast');
-		//$this.find('.sub-menu').css({display: 'none'});
 	});
 	//======================= CAROUSEL =========================== 
-	jQuery('.carousel').flexslider({
+	$('.carousel').flexslider({
 	    animation: "slide",
 	    slideshowSpeed: 3000,
 	    pauseOnAction: true,
